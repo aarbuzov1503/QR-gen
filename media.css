@@ -351,6 +351,35 @@
 }
 
 @media (max-width : 768px) {
+.main-heading {
+  font-size: 25px;
+}
+
+.heading {
+  font-size: 19px;
+}
+
+.description {
+max-width: 350px;
+}
+
+#qrcode {
+    width: 212px;
+    height: 212px;
+}
+
+ /* .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  */
+
+.section__form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 	.description {
 		width: 450px;
 	}

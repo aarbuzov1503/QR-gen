@@ -29,33 +29,35 @@
         url('../Fonts/Montserrat--Bold.woff') format('woff');
 }
 
- * {
-     margin: 0;
-     font-family: sans-serif;
- }
+* {
+    box-sizing: border-box;
+}
 
- body {
-     padding: 40px 0;
- }
-
- section {
-     max-width: 1000px;
-     margin: 0 auto;
- }
-
- h1 {
-     font-size: 50px;
-     margin-bottom: 40px;
- }
-
- .description {
-     margin-bottom: 40px;
- }
+.body {
+    font-family: 'Montserrat', sans-serif;
+}
 
 .container {
     padding: 0 75px;
     max-width: 1920px;
     margin: 0 auto;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 16px;
+    background-color: blue;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.5;
+}
+
+.btn:active {
+    background-color: var(--active);
+    color: var(--black);
 }
 
 
@@ -264,62 +266,98 @@
     background: var(--white);
 }
 
+.section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
 
- .form {
-     display: flex;
-     justify-content: space-between;
-     margin-bottom: 40px;
- }
+.first__section {
+    margin-bottom: 100px;
+}
 
- input[type="url"] {
-     font-size: 32px;
-     width: 70%;
- }
+.second__section {
+    margin-bottom: 40px;
+}
 
- button {
-     font-size: 28px;
-     cursor: pointer;
- }
+.main-heading {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
 
- .error-message {
-     display: none;
-     margin-bottom: 40px;
-     color: red;
-     font-size: 24px;
-     font-weight: bold;
- }
+.heading {
+    margin-bottom: 20px;
+}
 
- .error-message-active {
-     display: block;
- }
+/* .description {
 
- hr {
-     margin-bottom: 40px;
- }
+} */
 
- .qrcode-container {
-     display: flex;
-     justify-content: center;
- }
+.second__section-header {
+    margin-bottom: 20px;
+}
 
- #qrcode {
-     width: 512px;
-     height: 512px;
- }
+.textarea {
+    border-color: var(--hover);
+}
 
- textarea {
-  width: 100%;
-  height: 200px;
-  margin-top: 20px;
+
+input[type="url"] {
+    font-size: 32px;
+    width: 70%;
+}
+
+button {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.error-message {
+    display: none;
+    margin-bottom: 40px;
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.error-message-active {
+    display: block;
+}
+
+hr {
+    margin-bottom: 40px;
+}
+
+.qrcode-container {
+    display: flex;
+    justify-content: center;
+}
+
+#qrcode {
+    width: 512px;
+    height: 512px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
 }
 
 input[type="submit"] {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 18px;
+    padding: 10px 20px;
+    font-size: 18px;
 }
 
-
+.section__form {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    max-width: 1000px;
+}
 /*footer*/
 
 .footer {
@@ -645,4 +683,3 @@ input[type="submit"] {
 .popup__wrapper {
     padding: 40px;
 }
-
